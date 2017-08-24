@@ -1,0 +1,149 @@
+project(GoGame)
+
+add_executable(${PROJECT_NAME} WIN32
+	CollectPage.h
+	CollectPage.cpp
+	GuardWnd.h
+	GuardWnd.cpp
+	ResMan.h
+	ResMan.cpp
+	WarDlg.h
+	WarDlg.cpp
+	BattleDlg.cpp
+	DataSetDlg.h  
+	FacDetailPage.h 
+	GiftPage.h   
+	MailDlg.h   
+    request.h    
+	StarDlg.h  
+  BattleDlg.h   
+  DibBut.cpp      
+  FacDlg.cpp      
+  MapView.cpp            
+  StarMap.cpp  
+AddrDlg.cpp    
+   BossBook.cpp  
+   DibBut.h     
+   FacDlg.h     
+   MapView.h   
+   Resource.h      
+   StarMap.h
+AddrDlg.h     
+    BossBook.h   
+	DibButton.cpp   
+	FacStockPage.cpp 
+	GoGame.cpp  
+	MessageDlg.cpp
+	RetryDlg.cpp    
+    StdAfx.cpp 
+    User32Dll.cpp
+AniBut.cpp     
+   CardDlg.cpp 
+   DibButton.h    
+   FacStockPage.h  
+   MessageDlg.h 
+   RetryDlg.h     
+   StdAfx.h    
+   User32Dll.h
+AniBut.h      
+    CardDlg.h     
+	DibList.cpp   
+	FightDlg.cpp    
+	GoGame.h    
+	NameDlg.cpp    
+	SaveBook.cpp  
+	StockDlg.cpp
+	UserDlg.cpp
+AnyDataList.cpp 
+  CatchDlg.cpp   
+  DibList.h      
+  FightDlg.h 
+  NameDlg.h   
+  SaveBook.h     
+  StockDlg.h    
+  UserDlg.h
+AnyDataList.h  
+   CatchDlg.h   
+   DibMsgDlg.cpp   
+   GameView.cpp   
+   GoGame.rc  
+   PayDlg.cpp    
+   SendMailDlg.cpp  
+   StockPage.cpp 
+   UserPage.cpp
+ArrayBut.cpp     
+ CatchView.cpp 
+ DibMsgDlg.h     
+ GameView.h    
+ GoGameDlg.cpp 
+ PayDlg.h     
+ SendMailDlg.h  
+ StockPage.h 
+ UserPage.h
+ArrayBut.h    
+    CatchView.h  
+	DragIconWnd.cpp 
+	GeniusDlg.cpp  
+	GoGameDlg.h 
+	PerBar.cpp   
+	ShopDlg.cpp    
+	TabletDlg.cpp  
+	WebServer1.cpp
+ArrayPage.cpp   
+  CityDlg.cpp 
+  DragIconWnd.h   
+  GeniusDlg.h   
+  ImageBut.cpp 
+  PerBar.h     
+  ShopDlg.h    
+  TabletDlg.h  
+  WebServer1.h
+ArrayPage.h    
+   CityDlg.h   
+   EffectWnd.cpp 
+   GeniusPage.cpp 
+   ImageBut.h   
+   RegDlg.cpp  
+   SkillBut.cpp     
+   TalkDlg.cpp 
+   XMyClient.cpp
+AutoBattle.cpp  
+  EffectWnd.h  
+  GeniusPage.h  
+  RegDlg.h      
+  SkillBut.h   
+  TalkDlg.h   
+  XMyClient.h
+AutoBattle.h   
+   DataList.cpp  
+   EVODlg.cpp   
+   GiftDlg.cpp   
+   reqsock.cpp  
+   SkillDetailDlg.cpp 
+   TechPage.cpp  
+   XMyMailClient.cpp
+BattleClient.cpp 
+ DataList.h  
+ EVODlg.h      
+ GiftDlg.h           
+ reqsock.h    
+ SkillDetailDlg.h 
+   TechPage.h   
+   XMyMailClient.h
+BattleClient.h  
+  DataSetDlg.cpp 
+  FacDetailPage.cpp 
+  GiftPage.cpp  
+  MailDlg.cpp   
+  request.cpp  
+  StarDlg.cpp     
+ )
+
+set_target_properties(${PROJECT_NAME}
+	PROPERTIES
+	LINK_FLAGS "/level='highestAvailable' /SAFESEH:NO")
+
+target_link_libraries(${PROJECT_NAME}
+	GoBase
+	WinBase
+	)

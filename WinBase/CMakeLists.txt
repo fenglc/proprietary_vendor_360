@@ -1,0 +1,83 @@
+project(WinBase)
+
+add_library(${PROJECT_NAME} STATIC
+	AnyDataSet.cpp
+	DBAsync.h
+	Global.cpp
+	IconDialog.cpp
+	ListCtrlEx.cpp 
+	ODBCBaseSetAny.cpp 
+	PageTab.cpp  
+    StdAfx.cpp   
+    XDib.cpp
+AnyDataSet.h  
+  DirBrowns.cpp  
+  Global.h         
+  IconDialog.h  
+  ListCtrlEx.h  
+  ODBCBaseSetAny.h  
+  PageTab.h     
+  StdAfx.h    
+  XDib.h
+BitmapDC.cpp  
+  DirBrowns.h   
+  Inplaceedit.cpp 
+  LocalLog.cpp
+  ODBCData.cpp 
+  ProtoBuf.cpp  
+  Titletip.cpp
+BitmapDC.h   
+   DirTree.cpp    
+   Inplaceedit.h 
+   LocalLog.h    
+   ODBCData.h    
+   ProtoBuf.h   
+   Titletip.h
+CELLRANGE.h   
+  DirTree.h   
+  Gridctrl.cpp   
+  Inplacelist.cpp 
+  MSAThread.cpp 
+  ODBCDataAny.cpp  
+  Register.cpp   
+      DriverBox.cpp
+	  Gridctrl.h     
+	  Inplacelist.h  
+	  MSAThread.h 
+	  ODBCDataAny.h 
+      Register.h  
+  DriverBox.h  
+  Griddroptarget.cpp 
+  JSon.cpp   
+  ODBCBase.cpp 
+  PageClient.cpp     
+  Services.cpp  
+  WinBase.h
+ColorBut.cpp  
+  GameDataSet.cpp 
+  Griddroptarget.h  
+  JSon.h       
+  ODBCBase.h   
+  PageClient.h    
+  Services.h
+ColorBut.h   
+   GameDataSet.h   
+   IconBut.cpp    
+   LightButton.cpp
+   ODBCBaseSet.cpp
+   PageDlg.cpp  
+   ServicesEnt.cpp 
+   WinGoSocket.cpp
+DBAsync.cpp  
+   GameObjBase.h 
+   IconBut.h  
+   LightButton.h
+   ODBCBaseSet.h 
+   PageDlg.h      
+   ServicesEnt.h 
+   WinGoSocket.h )
+
+target_link_libraries(${PROJECT_NAME}
+	GoBase
+	ImageLib
+	Gdiplus.lib)

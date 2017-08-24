@@ -1,0 +1,80 @@
+project(GoBase)
+
+add_library(${PROJECT_NAME} STATIC
+    ReadWriteData.h 
+ XFile.h   
+       XIntfaceClient.cpp  
+ XProtoGameChat.h 
+  XProtoGamePos.h   
+   XProtoServer.h 
+ XString.h
+   GoBase.h  
+          StdAfxBase.h   
+  XFullTime.cpp   
+ XIntfaceClient.h  
+   XProtoGameEQ.h    
+ XProtoGamePubData.h  
+XRPCClient.cpp 
+ XTime.h   
+       XFullTime.h   
+   XMailClient.cpp   
+   XProtoGameFight.h 
+XProtoGamePubMsg.h   
+XRPCClient.h  
+  XVector.h
+               XAnimation.cpp 
+  XGameClient.cpp 
+XMailClient.h   
+     XProtoGameGift.h
+   XProtoGameSendMsg.h 
+ XSocket.h
+  ProtoBuf.cpp  
+      XAnimation.h  
+   XGameClient.h   
+ XMutex.h        
+     XProtoGameGold.h 
+  XProtoGameShope.h 
+   XSocketApply.h
+  ProtoBuf.h  
+        XCertMaker.cpp 
+  XGoSocket.cpp  
+  XProtoClient.cpp  
+   XProtoGameHou.h  
+  XProtoGameStar.h   
+  XSort.cpp
+DataType.cpp  
+  ProtoGameWorld.cpp
+  XCertMaker.h 
+    XGoSocket.h   
+   XProtoClient.h     
+  XProtoGameMail.h 
+  XProtoGameToys.h   
+  XSort.h
+DataType.h 
+     ProtoGameWorld.h 
+   XFastAlloc.cpp 
+  XHttpClient.cpp 
+ XProtocolObject.cpp 
+ XProtoGameMT.h   
+  XProtoGameUser.h 
+    XStream.cpp
+GGType.h   
+     ReadWriteData.cpp 
+  XFastAlloc.h    
+ XHttpClient.h   
+ XProtocolObject.h  
+  XProtoGameObjs.h  
+ XProtoRPC.h    
+      XStream.h
+    Win32/BWCBase.cpp
+    Win32/StdAfxBase.cpp  
+    Win32/XFile.cpp
+    Win32/XMutex.cpp
+    Win32/XSocket.cpp
+    Win32/XSocketApply.cpp
+    Win32/XString.cpp
+    Win32/XTime.cpp )
+
+target_link_libraries(${PROJECT_NAME}
+	Ws2_32.lib
+	Winmm.lib)

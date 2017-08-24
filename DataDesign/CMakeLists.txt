@@ -1,0 +1,100 @@
+project(DataDesign)
+
+add_executable(${PROJECT_NAME} WIN32
+	CitySet.h
+	CitySet.cpp
+	CitySetDlg.h
+	CitySetDlg.cpp
+	DragIconWnd.h
+	DragIconWnd.cpp
+	DibList.h
+	DibList.cpp
+	GeniusSelectDlg.h
+	GeniusSelectDlg.cpp
+	NPCSelectDlg.h
+	NPCSelectDlg.cpp
+	NPCArray.h
+	NPCArray.cpp
+	ResMan.h
+	ResMan.cpp
+ AnyDataList.cpp  
+ BattleDlg.cpp 
+ ColorEdit.h   
+ DataDesignDlg.cpp  
+ NPCSetDlg.h   
+ RangeSetDlg.h 
+ SelectBut.cpp 
+AnyDataList.h 
+    BattleDlg.h   
+	ColorTextDlg.cpp 
+	DataDesignDlg.h
+	OptSetDlg.cpp  
+	reqsock.cpp  
+	SelectBut.h  
+	TipsDlg.cpp
+AnyPage.cpp  
+     BossSetDlg.cpp  
+	 ColorTextDlg.h 
+	 DataDoc.h      
+	 OptSetDlg.h  
+	 reqsock.h   
+	 SelectDlg.cpp 
+	 TipsDlg.h
+AnyPage.h   
+     BossSetDlg.h   
+	 DataList.cpp   
+	 LoginDlg.cpp
+	 PerDlg.cpp   
+	 request.cpp  
+  SelectDlg.h  
+  User32Dll.cpp
+ArrayDlg.cpp    
+  CityPage.cpp 
+  DataList.h   
+  LoginDlg.h   
+  PerDlg.h    
+  request.h   
+  StarPage.cpp 
+  User32Dll.h
+ArrayDlg.h   
+     CityPage.h  
+	 DataDesign.cpp 
+	 DropSetDlg.cpp  
+	 MapBut.cpp   
+	 PopList.cpp 
+    StarPage.h  
+	WebServer1.cpp
+AutoBattle.cpp  
+  DropSetDlg.h    
+  MapBut.h   
+  PopList.h     
+  Resource.h   
+  StdAfx.cpp   
+  WebServer1.h
+AutoBattle.h  
+    ColorBand.cpp 
+	DataDesign.h 
+	MapView.cpp  
+	PosDlg.cpp    
+	ResPage.cpp  
+	StdAfx.h
+BattleClient.cpp 
+ ColorBand.h   
+ MapView.h   
+ PosDlg.h      
+ ResPage.h   
+ TestDlg.cpp
+BattleClient.h  
+  ColorEdit.cpp   
+  DataDesign.rc    
+  NPCSetDlg.cpp 
+  RangeSetDlg.cpp
+  TestDlg.h )
+
+set_target_properties(${PROJECT_NAME}
+	PROPERTIES
+	LINK_FLAGS "/SAFESEH:NO")
+	
+target_link_libraries(${PROJECT_NAME}
+	legacy_stdio_definitions.lib
+			WinBase)
